@@ -31,9 +31,9 @@ def get_index(index_ric, fields_list, start_date):
     Returns:
         index_df: df with Constituent RIC and Names
     '''
-    index_df, err = ek.get_data(instruments = index_ric, 
-                           fields = fields_list,
-                           parameters = {'SDate': start_date})[0]
+    index_df= ek.get_data(instruments = index_ric, 
+                          fields = fields_list,
+                          parameters = {'SDate': start_date})[0]
     return index_df
 
 '''
