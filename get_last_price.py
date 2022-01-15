@@ -22,4 +22,4 @@ def get_price_close(ric_list, date):
     return df, err
 
 
-get_price_close(ric_list = ['MNST.OQ', 'TROW.OQ'], date = '20190307')
+df, err = get_price_close(ric_list = ['MNST.OQ', 'TROW.OQ'], date = '20190307')
